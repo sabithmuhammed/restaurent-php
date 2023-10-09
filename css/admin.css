@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% auto;
+    background-image: url("../images/background-images/biriyani-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*utils*/
+.btn-edit {
+    width: 30%;
+    background-color: rgb(22, 163, 184);
+    height: 40px;
+    border: 1px solid black;
+    font-weight: 600;
+    letter-spacing: -1px;
+
+}
+
+.btn-delete {
+    width: 30%;
+    margin-left: 10%;
+    background-color: #DC3545;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    border: 1px solid black;
+    letter-spacing: -1px;
+
+}
+
+.btn-green {
+    background-color: rgb(40, 166, 68);
+    width: 200px;
+}
+
+.btn-edit:hover {
+    background-color: #32e4f5;
+}
+
+.btn-delete:hover {
+    background-color: #fa4a5b;
+}
+
+.btn-green:hover {
+    background-color: rgb(53, 204, 86);
+}
+
+a {
+    width: 80%;
+    height: 50px;
+}
+
+/*utils*/
+.sidemenu {
+    background-color: rgba(255, 255, 255, 0.088);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 100%;
+    font-weight: 900;
+    padding-bottom: 15%;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+}
+
+.heading-div {
+    background-color: #fdd40799;
+
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+    /* background-color: rgb(41, 242, 61); */
+    background-color: #fdd407;
+
+    border-radius: 9px;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    max-width: 250px;
+}
+
+button:hover {
+    background-color: #f6d73f;
+
+
+}
+
+.main-container {
+    height: 100%;
+    overflow-y: scroll;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+tr {
+    border-bottom: 2px solid white;
+    text-align: center;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.259);
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+td,
+th {
+    width: 25%;
+}
+
+th {
+    background-color: #fdd40799;
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+
+
+}
+
+tr:hover>td {
+
+    background-color: rgba(255, 255, 255, 0.303);
+
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+.image {
+    height: 120px;
+    width: 120px;
+    background-color: red;
+    margin: auto;
+    border: 3px solid black;
+
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* orders */
+.orders {
+    width: 95%;
+}
+
+.orders td,
+.orders th {
+    width: 16%;
+}
+
+.btn-order {
+    width: 40%;
+    margin-left: 3px;
+}
+
+.payment td,
+.payment th {
+    width: 20%;
+}
+
+.settings {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logout {
+    width: 350px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.321);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logout>.btn-logout {
+    background-color: #DC3545;
+    color: white;
+}
+
+.logout>.btn-confirm {
+    background-color: #32e4f5;
+}
+
+.logout>input {
+    width: 80%;
+    height: 40px;
+    border-radius: 9px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+.add-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.add-item>form {
+    height: 80%;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.add-item input {
+    width: 300px;
+    height: 40px;
+    background-color: #ffffff6b;
+    border: 2px solid black;
+    border-radius: 9px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.add-item textarea {
+    width: 300px;
+    background-color: #ffffff6b;
+    border: 2px solid black;
+    border-radius: 9px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.add-item label {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.add-item h1 {
+    color: rgb(190, 190, 190);
+}
+
+.btn-success {
+    background-color: #32e4f5;
+}
+
+.btn-success:hover {
+    background-color: #66effc;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+}
